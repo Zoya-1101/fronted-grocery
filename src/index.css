@@ -1,0 +1,260 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+body { background:#fff5ef; }
+
+.friend-top { background:white; display:flex; justify-content:space-between; align-items:center; padding:14px 28px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+.friend-nav { display:flex; gap:28px; font-weight:700; }
+.friend-nav span { color:#1A7A4D; cursor:pointer; }
+.friend-nav .active { color:#1A7A4D; border-bottom:3px solid #1A7A4D; padding-bottom:4px; }
+.admin-btn { background:#1A7A4D; color:white; border:none; padding:8px 18px; border-radius:20px; font-weight:700; cursor:pointer; }
+
+.friend-layout { display:grid; grid-template-columns:1fr 340px; gap:22px; padding:22px 28px; align-items:start; }
+
+.new-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:16px; }
+.new-card { background:white; border:1.5px solid #c8e6c9; border-radius:18px; padding:0 0 14px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.07); }
+/* --- EXACT CARD DESIGN LIKE PICTURE --- */
+.new-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 16px;
+  padding-bottom: 30px;
+}
+
+.new-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 10px 10px 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.new-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.new-img {
+  background: #f9fafb;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  font-size: 62px;
+  text-align: center;
+  padding: 14px 0 12px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.new-card h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 4px;
+  padding: 0 4px;
+}
+
+.new-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111111;
+  padding: 0 6px;
+}
+
+.new-stock {
+  font-size: 14px;
+  color: #111111;
+  padding: 0 6px 10px;
+  font-weight: 400;
+}
+
+.add-plan-btn {
+  background: linear-gradient(90deg, #d9c92e 0%, #d9c92e 45%, #7ab648 100%);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+}
+.friend-plan { background:white; padding:18px; border-radius:16px; box-shadow:0 2px 10px rgba(0,0,0,0.06); }
+.friend-plan label { display:block; margin:14px 0 4px; font-weight:700; font-size:14px; }
+.friend-plan input, .friend-plan select { width:100%; padding:10px; border:1px solid #ddd; border-radius:10px; }
+.freq-row { display:flex; flex-wrap:wrap; gap:8px; }
+.freq { background:#E8F5EE; color:#1A7A4D; border:none; padding:8px 12px; border-radius:20px; font-weight:700; cursor:pointer; }
+.freq.active { background:#1A7A4D; color:white; }
+.days-box { background:#fff8f0; padding:10px; border-radius:10px; margin-top:10px; }
+.day-check { display:block; font-weight:400 !important; margin:4px 0 !important; }
+.day-check input { width:auto !important; margin-right:6px; }
+.friend-cart { background:#fff8f0; padding:14px; border-radius:12px; margin-top:16px; }
+.confirm { background:#1A7A4D; color:white; border:none; width:100%; padding:12px; border-radius:10px; font-weight:800; margin-top:10px; cursor:pointer; box-shadow:0 4px 10px rgba(26,122,77,0.3); }
+
+.popup-bg { position:fixed; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:100; }
+.confirm-popup { background:white; padding:32px 28px 24px; border-radius:28px; width:90%; max-width:380px; text-align:center; }
+.tick-wrap { height:120px; display:flex; align-items:center; justify-content:center; }
+.tick-circle { width:110px; height:110px; background:#1A7A4D; border-radius:50%; color:white; font-size:64px; font-weight:800; display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 8px #E8F5EE; }
+.confirm-title { font-size:28px; line-height:1.2; margin:10px 0; }
+.confirm-sub { color:#94a3b8; font-size:14px; }
+.share-text { font-weight:700; margin:22px 0 10px; }
+.share-btn { background:#eefaf2; color:#1A7A4D; border:1.5px solid #a7d8bc; padding:7px 26px; border-radius:8px; font-weight:700; cursor:pointer; display:block; margin:0 auto; }
+.view-order-btn { background:#1A7A4D; color:white; border:none; width:100%; padding:14px; border-radius:12px; font-size:18px; font-weight:800; cursor:pointer; margin-top:16px; }
+
+.friend-layout {
+  padding-bottom: 80px !important;
+}
+.new-grid {
+  padding-bottom: 30px !important;
+}
+.new-card {
+  padding-bottom: 16px !important;
+}
+body {
+  padding-bottom: 40px;
+}
+
+/* ===== CLICK ANIMATION - GREEN + GOLDEN GLOW FOR ALL BUTTONS ===== */
+
+/* 1. Base - All buttons get smooth animation */
+.add-plan-btn, .qty-controls, .qty-controls button,
+.confirm, .freq, .admin-btn, .view-order-btn, .share-btn {
+  transition: all 0.15s ease !important;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 2. When you CLICK - Button pops small then big */
+.add-plan-btn:active, .confirm:active, 
+.admin-btn:active, .view-order-btn:active {
+  transform: scale(0.94) !important;
+  box-shadow: 0 0 0 3px #d9c92e, 0 0 0 6px rgba(122,182,72,0.35), 0 0 20px rgba(217,201,46,0.6) !important;
+}
+
+/* 3. When you CLICK Minus / Plus */
+.qty-controls button:active {
+  transform: scale(0.85) !important;
+  background: white !important;
+  color: #7ab648 !important;
+  box-shadow: 0 0 0 2px #d9c92e !important;
+}
+
+/* 4. Daily / Alternate / Weekly / Custom - When SELECTED */
+.freq.active {
+  background: linear-gradient(90deg, #d9c92e 0%, #d9c92e 45%, #7ab648 100%) !important;
+  color: white !important;
+  border: 2px solid #d9c92e !important;
+  box-shadow: 0 0 0 2px #7ab648, 0 4px 12px rgba(217,201,46,0.5) !important;
+  transform: scale(1.05) !important;
+  animation: popGlow 0.35s ease !important;
+}
+
+/* 5. When you CLICK Daily / Weekly etc - Pop animation */
+.freq:active {
+  transform: scale(0.93) !important;
+  border: 2px solid #d9c92e !important;
+  box-shadow: 0 0 0 3px rgba(122,182,72,0.4) !important;
+}
+
+/* 6. Main Pop + Glow Animation */
+@keyframes popGlow {
+  0% { transform: scale(0.90); box-shadow: 0 0 0 0 rgba(217,201,46,0.8); }
+  50% { transform: scale(1.08); box-shadow: 0 0 0 6px rgba(217,201,46,0.4), 0 0 20px rgba(122,182,72,0.5); }
+  100% { transform: scale(1.05); box-shadow: 0 0 0 2px #7ab648, 0 4px 12px rgba(217,201,46,0.5); }
+}
+
+/* 7. Subscribe Now button - After click it glows */
+.add-plan-btn {
+  animation: none;
+}
+.add-plan-btn:active {
+  animation: popGlow 0.3s ease;
+}
+
+/* 8. Confirm Subscription - Special Big Glow */
+.confirm:active {
+  animation: popGlow 0.4s ease;
+}
+
+/* 9. Keep your previous fixes - Centre + Colour - DO NOT DELETE */
+.new-card h3, .new-price, .new-stock {
+  text-align: center !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.qty-controls {
+  background: linear-gradient(90deg, #d9c92e 0%, #d9c92e 45%, #7ab648 100%) !important;
+}
+.confirm, .admin-btn, .view-order-btn {
+  background: linear-gradient(90deg, #d9c92e 0%, #d9c92e 45%, #7ab648 100%) !important;
+}
+
+
+
+/* --- SUBSCRIBE 3x2 SCROLL + STICKY --- */
+.subscribe-layout {
+  align-items: flex-start;
+}
+.subscribe-scroll-box {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 10px !important;
+  max-height: 420px; /* 2 rows visible */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 6px;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+.subscribe-scroll-box::-webkit-scrollbar { width: 6px; }
+.subscribe-scroll-box::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+.subscribe-compact-card {
+  padding: 8px !important;
+  text-align: center;
+}
+.subscribe-compact-card .new-img { font-size: 28px !important; padding: 6px 0 !important; }
+.subscribe-compact-card h3 { font-size: 12px !important; line-height: 1.2; min-height: 28px; margin: 4px 0 !important; }
+.subscribe-compact-card .new-price { font-size: 12px !important; margin: 2px 0 !important; }
+.subscribe-compact-card .new-stock { font-size: 10px !important; margin: 2px 0 6px !important; }
+.subscribe-compact-card .qty-inside { font-size: 12px !important; padding: 4px 2px !important; }
+.scroll-hint { font-size: 12px; color: #64748b; margin: -4px 0 8px; }
+
+.sticky-confirm-wrap {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 10px 0 2px;
+}
+.sticky-confirm-btn { width: 100%; }
+
+/* PHONE ONLY - Stack Plan below Products, Confirm always at bottom */
+@media (max-width: 768px) {
+  .subscribe-layout { display: flex !important; flex-direction: column !important; }
+  .subscribe-left { width: 100% !important; }
+  .subscribe-right { width: 100% !important; }
+  .subscribe-scroll-box {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-height: 380px; /* 2 rows on phone */
+    gap: 8px !important;
+  }
+  .sticky-confirm-wrap {
+    position: fixed !important;
+    left: 0; right: 0; bottom: 0;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.10);
+    z-index: 50;
+  }
+  .friend-app { padding-bottom: 70px; }
+}
+
+/* LAPTOP - Keep 3 columns, bigger cards, Plan on right */
+@media (min-width: 769px) {
+  .subscribe-scroll-box { grid-template-columns: repeat(3, 1fr) !important; max-height: 520px; }
+}

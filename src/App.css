@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f8fdf2; }
+button { cursor: pointer; border: none; padding: 8px 14px; border-radius: 20px; background: #eee; font-weight: 700; }
+button:hover { background: #7ab648; color: white; }
+
+.dash-page { max-width: 800px; margin: 20px auto; padding: 0 16px; }
+.dash-card { background: white; border-radius: 14px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.dash-btns { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+.dash-btn { border: none; padding: 8px 14px; border-radius: 20px; cursor: pointer; font-weight: 700; }
+.pause { background: #eee; } .resume { background: #7ab648; color: white; } .skip { background: #ffe8a3; } .cancel { background: #ffd6d6; }
+.admin-stats { display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+.stat { background: white; padding: 14px; border-radius: 12px; flex: 1; min-width: 120px; display: flex; flex-direction: column; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.stat b { font-size: 20px; }
+
+/* Home Page Fix */
+.home { max-width: 1000px; margin: 0 auto; padding: 20px; }
+.hero { background: white; border-radius: 20px; padding: 30px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.hero h1 { font-size: 38px; margin-bottom: 10px; }
+.hero p { color: #666; font-size: 18px; }
+.products { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.product-card { background: white; border-radius: 16px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.product-card h3 { margin: 8px 0 4px; }
+.product-card p { color: #666; }
+.product-card a { color: #4a7a1e; font-weight: 700; text-decoration: none; }
+
+
