@@ -1,6 +1,6 @@
 import axios from 'axios';
 const client = axios.create({
-  baseURL: 'https://10.121.219.246:5000/api',
+  baseURL: 'https://backened-groceries.onrender.com/api',
 });
 client.interceptors.request.use(config => {
   const token = localStorage.getItem('token');
