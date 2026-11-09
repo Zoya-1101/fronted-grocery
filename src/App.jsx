@@ -18,7 +18,7 @@ const [showNotif, setShowNotif] = useState(false);
   ]);
 
   useEffect(() => {
-    fetch("http://10.0.2.2:5000/api/subscriptions")
+    fetch("https://backened-groceries.onrender.com/api/subscriptions")
       .then((r) => r.json())
       .then((d) => {
         if (!Array.isArray(d) || !d.length) return;
